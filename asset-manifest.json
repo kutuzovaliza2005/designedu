@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/designedu/static/css/main.2ad8be64.css",
+    "main.js": "/designedu/static/js/main.c0b26fd4.js",
+    "index.html": "/designedu/index.html",
+    "main.2ad8be64.css.map": "/designedu/static/css/main.2ad8be64.css.map",
+    "main.c0b26fd4.js.map": "/designedu/static/js/main.c0b26fd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ad8be64.css",
+    "static/js/main.c0b26fd4.js"
+  ]
+}
