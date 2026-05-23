@@ -42,7 +42,7 @@ function HomePage() {
     return (
         <>
             <section className="hero">
-                <img src="/logo.png" alt="Designedu" className="animated-logo" />
+                <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Designedu" className="animated-logo" />
                 <h1>Школа Будущего</h1>
                 <p>Освой графический дизайн с нуля до pro уровня под руководством преподавателей.</p>
                 <button className="btn-primary" onClick={() => navigate('/courses')} style={{ marginTop: '30px', fontSize: '1.1rem' }}>
