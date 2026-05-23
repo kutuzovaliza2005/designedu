@@ -1,0 +1,157 @@
+/* Обёртка слайдера */
+.reviews-slider-wrapper {
+    margin: 40px 0;
+}
+
+/* Контейнер со стрелками */
+.reviews-slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Трек со слайдами */
+.reviews-slider-track {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    overflow: visible;
+}
+
+/* Карточка отзыва */
+.review-slide-card {
+    flex: 1;
+    min-width: 0;
+    background: rgba(8, 8, 16, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 30px;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.review-slide-card:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+    background: rgba(8, 8, 16, 0.9);
+}
+
+/* Кавычка */
+.review-quote-icon {
+    font-size: 4rem;
+    font-family: Georgia, serif;
+    color: #8b5cf6;
+    opacity: 0.4;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    line-height: 1;
+}
+
+/* Текст отзыва */
+.review-slide-text {
+    font-style: italic;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    padding-top: 20px;
+}
+
+/* Автор */
+.review-slide-author {
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+/* Курс */
+.review-slide-course {
+    background: linear-gradient(135deg, #478BF9, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Стрелки */
+.slider-arrow {
+    background: rgba(139, 92, 246, 0.2);
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.slider-arrow:hover {
+    background: rgba(139, 92, 246, 0.4);
+    transform: scale(1.05);
+}
+
+/* Точки пагинации */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(139, 92, 246, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.slider-dot.active {
+    width: 24px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #478BF9, #8b5cf6);
+}
+
+.slider-dot:hover {
+    background: rgba(139, 92, 246, 0.6);
+    transform: scale(1.2);
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 768px) {
+    .reviews-slider-container {
+        gap: 10px;
+    }
+
+    .slider-arrow {
+        width: 36px;
+        height: 36px;
+    }
+
+    .review-slide-card {
+        padding: 20px;
+    }
+
+    .review-quote-icon {
+        font-size: 3rem;
+        top: 10px;
+        left: 15px;
+    }
+
+    .review-slide-text {
+        font-size: 0.85rem;
+    }
+}
