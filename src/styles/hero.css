@@ -1,0 +1,77 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle at 30% 40%, rgba(13, 27, 42, 0.5) 0%, rgba(5, 5, 15, 0.6) 100%);
+    min-height: 400px;
+}
+
+.hero p {
+    color: #cbd5e1;
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #fff, #8b5cf6, #478BF9, #fff);
+    background-size: 300% 100%;
+    animation: titleGradient 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes titleGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.animated-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    animation: logoAppear 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1), logoFloat 3s ease-in-out infinite 0.8s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    border-radius: 20px;
+}
+
+@keyframes logoAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) rotate(-5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes logoFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 768px) {
+    .animated-logo {
+        width: 80px;
+        height: 80px;
+    }
+}

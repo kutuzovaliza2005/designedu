@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background: linear-gradient(
+            135deg,
+            #020518 0%,
+            #0b1a3f 30%,
+            #162055 50%,
+            #2d1b5e 70%,
+            #0d1a3a 100%
+    );
+    background-size: 400% 400%;
+    animation: appleDepth 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+            ellipse at 60% 40%,
+            rgba(30, 100, 255, 0.12) 0%,
+            rgba(100, 50, 200, 0.08) 40%,
+            transparent 70%
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes appleDepth {
+    0% {
+        background-position: 0% 50%;
+        background-size: 400% 400%;
+    }
+    25% {
+        background-position: 70% 20%;
+        background-size: 450% 450%;
+    }
+    50% {
+        background-position: 100% 80%;
+        background-size: 380% 380%;
+    }
+    75% {
+        background-position: 30% 90%;
+        background-size: 420% 420%;
+    }
+    100% {
+        background-position: 0% 50%;
+        background-size: 400% 400%;
+    }
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #478BF9, #8b5cf6);
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-to-top:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
+}
+
+@media (max-width: 768px) {
+    .scroll-to-top {
+        width: 44px;
+        height: 44px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+.reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

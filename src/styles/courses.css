@@ -1,0 +1,194 @@
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 60px 0;
+    background: linear-gradient(135deg, #fff, #8b5cf6, #478BF9);
+    background-size: 200% 200%;
+    animation: sectionTitleFlow 4s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes sectionTitleFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 5% 80px 5%;
+}
+
+.course-card {
+    background: rgba(8, 8, 16, 0.75);
+    border-radius: 20px;
+    border: 1px solid rgba(71, 139, 249, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.4s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    border-color: #8b5cf6;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+    background: rgba(8, 8, 16, 0.9);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(71, 139, 249, 0.2);
+}
+
+.card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.course-info-text {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+    margin: 15px 0;
+    flex-grow: 1;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #478BF9, #8b5cf6);
+    background-size: 200% 200%;
+    animation: priceFlow 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+
+@keyframes priceFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Поиск */
+.search-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-input {
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    background: rgba(10, 10, 20, 0.8);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.search-input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+    background: rgba(10, 10, 20, 0.95);
+}
+
+.search-input::placeholder {
+    color: rgba(203, 213, 225, 0.6);
+}
+
+.search-result-count {
+    color: #8b5cf6;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.not-found-message {
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 50px;
+}
+
+.not-found-message p {
+    color: #cbd5e1;
+    font-size: 1.2rem;
+}
+/* Бейджи на карточках курсов */
+.course-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.course-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.5px;
+}
+
+.badge-hit {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+}
+
+.badge-new {
+    background: linear-gradient(135deg, #00c6fb, #005bea);
+    color: white;
+}
+
+.badge-sale {
+    background: linear-gradient(135deg, #f5576c, #f093fb);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .course-badge {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        top: 10px;
+        right: 10px;
+    }
+}
