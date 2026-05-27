@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/designedu/static/css/main.cc19957c.css",
+    "main.css": "/designedu/static/css/main.3639a0fc.css",
     "main.js": "/designedu/static/js/main.7b4e187a.js",
     "index.html": "/designedu/index.html",
-    "main.cc19957c.css.map": "/designedu/static/css/main.cc19957c.css.map",
+    "main.3639a0fc.css.map": "/designedu/static/css/main.3639a0fc.css.map",
     "main.7b4e187a.js.map": "/designedu/static/js/main.7b4e187a.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc19957c.css",
+    "static/css/main.3639a0fc.css",
     "static/js/main.7b4e187a.js"
   ]
 }
