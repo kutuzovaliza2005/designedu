@@ -1,9 +1,7 @@
-/* Обёртка слайдера */
 .reviews-slider-wrapper {
     margin: 40px 0;
 }
 
-/* Контейнер со стрелками */
 .reviews-slider-container {
     position: relative;
     display: flex;
@@ -39,7 +37,6 @@
     background: rgba(8, 8, 16, 0.9);
 }
 
-/* Кавычка */
 .review-quote-icon {
     font-size: 4rem;
     font-family: Georgia, serif;

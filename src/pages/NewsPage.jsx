@@ -1,7 +1,7 @@
 import { newsData } from '../data/coursesData';
 
 function NewsPage() {
-    // Сортируем новости по дате (новые сверху)
+    // Сортировка новостей по дате
     const sortedNews = [...newsData].sort((a, b) => {
         const dateA = new Date(a.date.split(' ')[0] + ' ' + a.date.split(' ')[1] + ' ' + a.date.split(' ')[2]);
         const dateB = new Date(b.date.split(' ')[0] + ' ' + b.date.split(' ')[1] + ' ' + b.date.split(' ')[2]);

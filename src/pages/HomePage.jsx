@@ -4,7 +4,7 @@ import ReviewsSlider from '../components/ReviewsSlider';
 import StatsCounter from '../components/StatsCounter';
 import RevealOnScroll from '../components/RevealOnScroll';
 
-// Добавляем данные преподавателей
+// Данные преподавателей
 const teachersData = [
     {
         id: 1,

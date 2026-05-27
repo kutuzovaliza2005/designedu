@@ -16,9 +16,9 @@
 }
 
 @keyframes titleFlow {
-    0% { background-position: 0% 50%; }
+    0% { background-position: 0 50%; }
     50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    100% { background-position: 0 50%; }
 }
 
 .faq-item {
@@ -48,7 +48,6 @@
     }
 }
 
-/* Для телефона — без hover, только активное состояние */
 @media (max-width: 768px) {
     .faq-question:active {
         background: rgba(139, 92, 246, 0.3);

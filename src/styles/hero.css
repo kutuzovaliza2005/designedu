@@ -23,8 +23,8 @@
     background-size: 300% 100%;
     animation: titleGradient 5s ease infinite;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
 }
 
 @keyframes titleGradient {
@@ -68,7 +68,6 @@
     }
 }
 
-/* Адаптив для телефонов */
 @media (max-width: 768px) {
     .animated-logo {
         width: 80px;
