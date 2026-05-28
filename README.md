@@ -65,6 +65,7 @@ A final project will be a browser game which will be write using React.
 Исполнитель: Елизавета Воронько (верстальщик).
 Технологии: HTML5, CSS3 (Flexbox, Grid), медиазапросы.
 Результат: Пиксель-перфектная вёрстка по макетам Figma.
+Макет дизайна:  [Designedu project в Figma](https://www.figma.com/design/XoNnwfEb8QG7gTqfAliOac/Designedu-project?node-id=0-1&p=f&t=Fss6AXjQ6Pbivbzk-0)
 Адаптив:  Десктоп и мобильное разрешение.
 Кроссбраузерность: Chrome, Firefox, Safari, Edge.
 
