@@ -13,7 +13,7 @@ A final project will be a browser game which will be write using React.
 
 
 ### Смета
-
+**[Скачать смету проекта (Excel)](smeta.xlsx)**
 
 ### 1. Разработка концепции сайта
 
