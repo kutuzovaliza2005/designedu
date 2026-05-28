@@ -1,70 +1,186 @@
-# Getting Started with Create React App
+# Designedu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A final project will be a browser game which will be write using React.
 
-## Available Scripts
+## Все этапы будут продемонстрированы для наглядности
 
-In the project directory, you can run:
+###  Команда
+Проект выполняется командой из 4 человек, которые выполняют следующие роли:
+Раскатова Анастасия - Менеджер проекта, технический писатель, администратор
+Воронько Елизавета – Архитектор, системный аналитик, верстальщик
+Котлубаева Алиса - Дизайнер интерфейса (UI-дизайнер), дизайнер-эргономист (UX-дизайнер)
+Кутузова Елизавета – Программист, тестировщик
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Смета
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### 1. Разработка концепции сайта
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Тема: Сайт-визитка школы дизайна Designedu.
+2. Тип: Многостраничный адаптивный сайт.
+3. Аудитория: Абитуриенты, студенты, желающие пройти курсы дизайна.
+4. Основные разделы: (Главная, Новости, Курсы, О школе, Контакты)
+5. Адаптив: Десктоп (1920x1080) + мобильный (800x600).
+6. Цель: Привлечение студентов, демонстрация курсов школы, сбор заявок.
 
-### `npm run build`
+### 2. Разработка архитектуры вебприложения
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Фронтенд: React 
+2. Маршрутизация: React Router DOM (SPA).
+3. Стили: CSS Modules + адаптивная вёрстка (Grid/Flex).
+4. Сборка: Vite / Create React App.
+5. Хранение данных: Локальный JSON-файл (список работ, курсов).
+6. Деплой: GitHub Pages.
+7. Кроссплатформенность: Поддержка браузеров Amigo, Atom, Edge, Firefox, Google Chrome, Internet Explorer, Opera, Safari, Mobile Safari, Яндекс.Браузер.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Разработка технического задания
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Общие требования
+Вебприложение должно быть разработано без использования системы управления сайтами. Вебприложение должно быть разработано на React. После окончания работ необходимо, чтобы команда Исполнителя самостоятельно могла осуществлять правки.
+По окончании работ Исполнитель обязан предоставить полностью функционирующий сайт, все исходные коды и графические материалы по дизайну, все необходимые данные для доступа к управлению сайтом (аккаунты, пароли, адреса серверов и т.п.). Исполнитель обязуется не использовать интеллектуальную собственность, полученную в ходе разработки и создания сайта в иных коммерческих проектах, если это будет наносить ущерб Заказчику. Заказчик может предоставить право использования материала со своего письменного согласия.
+# Требования к дизайну сайта
+Дизайн сайта не должен быть пёстрым. Использовать преимущественно оттенки синего, тёмно-фиолетового, чёрного и белого цветов. Для заголовков (теги h1, h2, h3) использовать градиентную заливку. Текст сайта должен быть написан шрифтом чёрного цвета на светлом фоне или белым на тёмном фоне (ссылки оформляются по умолчанию с возможностью изменения цвета при наведении). Дизайн сайта должен быть выполнен с использованием языка HTML и CSS (графические объекты должны быть выполнены с использованием SVG графики и/или вставки картинок типа png/jpg).
 
-### `npm run eject`
+# Требования к функциональности:
+1.	Адаптив (1920x1080 и 800x600).
+2.	Фильтр работ по категориям.
+3.	Валидация формы обратной связи.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Детальное описание страниц:
+1.	Главная: Hero-блок, кнопка «Начать обучение», краткая информация о школе, список преподавателей, слайдер с отзывами, раздел с часто задаваемыми вопросами FAQ.
+2.	Новости: Список новостей с датой обновления и картинками.
+3.	Курсы: Список курсов, кнопки «Записаться на курс»
+4.	О школе: Текстовая информация о школе, список преподавателей и наград
+5.	Контакты: ФИО, телефон, почта, ссылки на соцсети.
+6.	Header: Текстовый логотип «DESIGNEDU», навигационное меню с ссылками на основные разделы сайта: Главная, Новости, Курсы, О школе, Контакты. На десктопе ссылки отображаются в строку. На мобильных устройствах меню сворачивается в «бургер-иконку» (три горизонтальные линии)
+7.	Footer: Копирайт, контактная информация
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Открыть проект в системе контроля версий
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ссылка на сайт: https://kutuzovaliza2005.github.io/designedu/#/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. Оформление сайта в соответствии с разработанным дизайном
 
-## Learn More
+Исполнитель: Елизавета Воронько (верстальщик).
+Технологии: HTML5, CSS3 (Flexbox, Grid), медиазапросы.
+Результат: Пиксель-перфектная вёрстка по макетам Figma.
+Адаптив:  Десктоп и мобильное разрешение.
+Кроссбраузерность: Chrome, Firefox, Safari, Edge.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 6. Написание логики сайта
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Исполнитель: Елизавета Кутузова (программист).
+Технологии: React, React Router DOM.
+Реализовано:
+1.	Маршрутизация (5 страниц).
+2.	Компонент фильтрации работ.
+3.	Валидация формы обратной связи.
+4.	Сборка и деплой на GitHub Pages.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 7. Тестирование сайта на функциональное соответствие
 
-### Analyzing the Bundle Size
+Переход по ссылкам в хедере - Открывается нужная страница - Пройдено 
+Фильтр работ - Показываются работы выбранной категории - Пройдено 
+Отправка пустой формы - Сообщение об ошибке - Пройдено 
+Клик по логотипу - Переход на главную - Пройдено
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 8. Тестирование сайта на непредусмотренные сценарии
+Ввод некорректного URL (кроме существующих) - 404-страница или редирект на главную - Пройдено 
+Отключённый интернет- Браузер показывает стандартную ошибку - Пройдено 
+Быстрое переключение страниц - Нет зависаний, корректная загрузка - Пройдено
 
-### Making a Progressive Web App
+### 9. Нагрузочное тестирование сайта
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Количество одновременных пользователей - 100 человек (симуляция) - Страницы открываются за < 2 секунд - Пройдено 
+Частая смена фильтра	50 кликов за 10 секунд- Нет ошибок, данные обновляются – Пройдено
+Размер сайта - Объём статики < 5 МБ - Быстрая загрузка даже на 3G - Пройдено
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 10. Тестирование сайта на наличие ошибок
 
-### Deployment
+Орфография/опечатки - Тексты на всех страницах - 2 опечатки - Исполнено 
+Битые ссылки - Все внутренние ссылки – Нет ошибок - Исполнено 
+Консоль браузера - Ошибки JS/CSS - 1 предупреждение (устранено)	- Исполнено 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### 11. Контейнеризация сайта
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Технология: Docker (опционально для локальной разработки).
+Образ: designedu:latest.
+Запуск: docker run -p 3000:3000 designedu.
+Результат: Сайт работает внутри контейнера одинаково на любом сервере.
+
+### 12. Приобретение домена
+
+Статус: На этапе разработки используется GitHub Pages.
+Планируемый домен: designedu.ru (проверка доступности).
+Исполнитель: Анастасия Раскатова (менеджер проекта).
+Регистратор: nic.ru или reg.ru.
+Стоимость (ориентир): 200 руб./год.
+
+### 13. Приобретение хостинга
+
+Текущий вариант: GitHub Pages (бесплатно).
+Планируемый (при необходимости): VPS (например, TimeWeb, Beget) или Netlify.
+Требования: Поддержка статики, HTTPS.
+Стоимость: 200 руб.
+
+### 14. Размещение сайта в сети Интернет
+
+Финальный URL: https://kutuzovaliza2005.github.io/designedu/#/
+Дата размещения: 28.05.2026.
+Доступность: 24/7.
+Проверка: Сайт открывается по ссылке с любого устройства.
+
+### 15. Создание рабочей документации для администратора
+
+Администратор: Анастасия Раскатова (менеджер проекта).
+
+# Содержание документации:
+
+1.	Команда. 
+2.	Смета.
+3.	Разработка концепции сайта.
+4.	Разработка архитектуры вебприложения.
+5.	Разработка технического задания и дизайна.
+6.	Открыть проект в системе контроля версий.
+7.	Оформление сайта в соответствии с разрабе
+8.	Оформление сайта в соответствии с разработанным дизайном.
+9.	Написание логики сайта
+10.	Нагрузочное тестирование сайта
+11.	Тестирование сайта наличие ошибок
+12.	Контенейризация сайта
+13.	Приобретение домена
+14.	Приобретение хостинга
+15.	Размещение сайта в сети Интернет
+16.	Создание рабочей документации для администратора
+17.	Создание рабочей документации для пользователя
+
+### 16. Создание рабочей документации для пользователя
+
+Пользователь: Посетитель сайта.
+
+# Инструкция по эксплуатации:
+
+1.	Загрузка сайта
+Открыть браузер → ввести https://kutuzovaliza2005.github.io/designedu/
+
+2.	Навигация
+Использовать меню в хедере (Главная, Новости, Курсы, О школе, Контакты).
+
+3.	Просмотр курсов
+Перейти в раздел «Курсы» → выбрать категорию фильтра.
+
+4.	Оставить заявку 
+Перейти в «Курсы» → нажать «Записаться на курс» → заполнить форму → нажать «Отправить данные».
+
+Решение проблем:
+1.	Сайт долго грузится - Проверить интернет, обновить страницу
+2.	Не работает фильтр - Перезагрузить страницу, очистить кэш
+3.	Форма не отправляется - Заполнить все поля корректно
+По возникшим вопросам обращаться:
+1.	Обратиться к разделу с часто задаваемыми вопросами FAQ
+2.	Поддержка: designedu@support.ru
+
